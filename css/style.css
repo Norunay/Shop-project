@@ -331,7 +331,9 @@ header {
 
 .hero__size-btns {
   display: flex;
-  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-top: 12px;
   padding-bottom: 25px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
@@ -343,6 +345,9 @@ header {
   border-radius: 62px;
   padding: 12px 24px;
   background: #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
 }
