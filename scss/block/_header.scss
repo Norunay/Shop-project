@@ -1,4 +1,25 @@
+.sign{
+    background: #000;
+    width: 100%;
+    font-size: 12px;
+    max-height: fit-content;
+    .sign_w{
+        @include fx;
+        padding: 5px 20px;
+        max-height: fit-content;
+    }
+    span{
+        color: white;
+        a{
+            color: white;
+        }
+    }
+    i{
+        color: white;
+    }
+}
 header{
+    z-index: 98;
     background-color: $mainclr;
     position: fixed;
     width: 100%;
@@ -11,7 +32,7 @@ header{
     @include fx;
 }
 .header__inner{
-    padding: 13px 0;
+    padding: 15px 0;
 }
 .logo{
     font-size: 2em;
@@ -92,7 +113,7 @@ header{
 }
 @media (max-width: 600px) {
     html{
-        font-size: 14px;
+        font-size: 12px;
     }
     .header__tools{
         width: 22%;

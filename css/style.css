@@ -18,7 +18,46 @@
   padding: 0 20px;
 }
 
+.btn {
+  width: 100%;
+  background: black;
+  border: none;
+  border-radius: 100px;
+  padding: 15px;
+  color: white;
+}
+.btn:hover {
+  background: hsla(0, 0%, 0%, 0.6);
+  transition: all 0.2s;
+}
+
+.sign {
+  background: #000;
+  width: 100%;
+  font-size: 12px;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
+.sign .sign_w {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
+.sign span {
+  color: white;
+}
+.sign span a {
+  color: white;
+}
+.sign i {
+  color: white;
+}
+
 header {
+  z-index: 98;
   background-color: #F2F0F1;
   position: fixed;
   width: 100%;
@@ -36,7 +75,7 @@ header {
 }
 
 .header__inner {
-  padding: 13px 0;
+  padding: 15px 0;
 }
 
 .logo {
@@ -126,7 +165,7 @@ header {
 }
 @media (max-width: 600px) {
   html {
-    font-size: 14px;
+    font-size: 12px;
   }
   .header__tools {
     width: 22%;
