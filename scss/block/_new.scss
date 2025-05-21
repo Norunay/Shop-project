@@ -12,7 +12,8 @@ h3{
     display: flex;
     justify-content: start;
     gap: 20px;
-    overflow: scroll;
+    overflow-y: scroll;
+    width: 100%;
 }
 
 .new__product{
