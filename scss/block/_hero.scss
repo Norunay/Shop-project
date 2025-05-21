@@ -10,3 +10,108 @@
         transition: all 0.2s;
     }
 }
+.btn.white{
+    border: 1px solid black;
+    background: transparent;
+}
+.hro{
+    padding-top: 100px;
+    background: $mainclr;
+    padding-bottom: 32px;
+}
+h2{
+    font-size: 4em;
+    font-weight: 900;
+    line-height: 64px;
+}
+h5{
+    font-size: 1em;
+    color: #00000099;
+}
+.hro__inner{
+    @include fx;
+    gap: 20px;
+    overflow: hidden;
+}
+.hro__title{
+    max-width: 600px;
+    @include fx;
+    flex-direction: column;
+    gap: 32px;
+}
+h4{
+    font-weight: 700;
+    font-size: 2.5em;
+}
+.hro__stats{
+    @include fx;
+    margin-top: 48px;
+    li{
+        padding: 0 15px;
+        border-right: 1px solid #0000001A;
+        border-left: 1px solid #0000001A;
+    }
+}
+.hro__img{
+    width: 55%;
+    position: relative;
+    img{
+        width: 100%;
+        position: absolute;
+        top: -320px;
+    }
+}
+.hro__wrapp{
+    width: 45%;
+}
+@media (max-width: 1020px){
+    .hro{
+        padding-bottom: 0px;
+    }
+    .hro__inner{
+        flex-direction: column;
+    }
+    .hro__title{
+        max-width: 100%;
+        width: 100%;
+    }
+    .hro__img{
+        height: 700px;
+        width: 100%;
+        position: relative;
+        background: url(/assets/hero/couple.jpg) no-repeat;
+        background-position: center top;
+        background-size: cover;
+        img{
+            display: none;
+            width: 100%;
+        }
+    }
+    .hro__stats{
+        max-width: 100%;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .hro__wrapp{
+        width: 100%;
+    }
+    .hro__inner{
+        @include fx;
+        gap: 20px;
+        overflow: hidden;
+    }
+}
+@media (max-width: 1020px){
+    .hro__img{
+        height: 500px;
+    }
+}
+@media (max-width: 400px) {
+    h2{
+        font-size: 3.2em;
+    }
+    .hro__img{
+        height: 400px;
+    }
+}

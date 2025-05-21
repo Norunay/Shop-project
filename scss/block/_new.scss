@@ -1,0 +1,39 @@
+h3{
+    font-size: 3em;
+    font-weight: 700;
+}
+.new__inner{
+    @include fx;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.new__products{
+    display: flex;
+    justify-content: start;
+    max-width: 1200px;
+    gap: 20px;
+    overflow: scroll;
+}
+
+.new__product{
+    min-width: 300px;
+    font-weight: 700;
+    font-size: 1.5em;
+    .new__img{
+        border-radius: 20px;
+        margin-bottom: 16px;
+        overflow: hidden;
+        img{
+            width: 100%;
+        }
+    }
+    .new__price{
+        font-size: 1.7em;
+    }
+}
+@media (max-width: 1000px) {
+    .new__product{
+    min-width: 250px;
+}
+}
