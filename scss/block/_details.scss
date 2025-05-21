@@ -231,6 +231,15 @@
     margin-top: 25px;
 }
 
+@media (max-width:768px) {
+    .hero__wrapper{
+        flex-wrap: wrap;
+       
+    }
+
+   
+}
+
 // hero
 
 // rating
@@ -363,6 +372,10 @@
     margin-top: 50px;
 }
 
+// rating
+
+// clothes
+
 .clothes__big-title{
     font-weight: 700;
     font-size: 48px;
@@ -376,6 +389,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
+    overflow-x: scroll;
 }
 
 .clothes__title {
@@ -417,3 +431,9 @@ display: flex;
 align-items: center;
 gap: 10px;
 }
+
+.clothes__item{
+    min-width: 295px;
+}
+
+// clothes

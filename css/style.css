@@ -386,6 +386,11 @@ header {
   margin-top: 25px;
 }
 
+@media (max-width: 768px) {
+  .hero__wrapper {
+    flex-wrap: wrap;
+  }
+}
 .rating__top-menu {
   display: flex;
   justify-content: center;
@@ -526,6 +531,7 @@ header {
   display: flex;
   align-items: center;
   gap: 20px;
+  overflow-x: scroll;
 }
 
 .clothes__title {
@@ -566,4 +572,8 @@ header {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.clothes__item {
+  min-width: 295px;
 }/*# sourceMappingURL=style.css.map */
