@@ -6,7 +6,6 @@
     .sign_w{
         @include fx;
         padding: 5px 20px;
-        max-height: fit-content;
     }
     span{
         color: white;
@@ -20,7 +19,7 @@
 }
 header{
     z-index: 98;
-    background-color: $mainclr;
+    background-color: white;
     position: fixed;
     width: 100%;
     top: 0;

@@ -1,16 +1,3 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #fff;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 20px;
-}
-
 h1 {
   font-size: 2em;
   font-weight: bold;
@@ -126,4 +113,70 @@ height: 24px;
   border: none;
   cursor: pointer;
   border-radius: 8px;
+}
+
+
+@media (max-width: 768px) {
+  .cart {
+    flex-direction: column;
+  }
+
+  .item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .item img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .details {
+    padding: 0;
+  }
+
+  .quantity {
+    justify-content: flex-start;
+  }
+
+  .summary {
+    margin-top: 20px;
+  }
+
+  .promo {
+    flex-direction: column;
+  }
+
+  .promo button {
+    width: 100%;
+  }
+
+  .checkout {
+    font-size: 14px;
+  }
+
+  .header__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .header__menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header__search_wrapp {
+    width: 100%;
+  }
+
+  .header__tools {
+    margin-top: 10px;
+  }
+
+  .sign_w {
+    font-size: 14px;
+    padding: 10px;
+  }
 }

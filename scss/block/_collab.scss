@@ -1,0 +1,23 @@
+.collab{
+    background: #000;
+    color: white;
+    margin-bottom: 72px;
+}
+.collab__inner{
+    @include fx;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 42px;
+    li{
+        font-size: 3em;
+        text-transform: uppercase;
+    }
+}
+@media (max-width: 1020px){
+    .collab__inner{
+        font-size: 12px;
+        gap: 20px;
+        @include fx(space-evenly);
+        flex-wrap: wrap;
+    }
+}
