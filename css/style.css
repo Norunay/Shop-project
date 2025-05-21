@@ -673,7 +673,6 @@ h3 {
 .new__products {
   display: flex;
   justify-content: start;
-  max-width: 1200px;
   gap: 20px;
   overflow: scroll;
 }
@@ -691,8 +690,71 @@ h3 {
 .new__product .new__img img {
   width: 100%;
 }
+.new__product .new__price {
+  font-size: 1.7em;
+}
+
 @media (max-width: 1000px) {
   .new__product {
     min-width: 250px;
+  }
+}
+.filter {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.filter__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background: #F2F0F1;
+  padding: 60px;
+  border-radius: 40px;
+}
+
+.filter__category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.filter__choose {
+  margin-top: 20px;
+  border-radius: 40px;
+  background: white;
+  padding: 25px 35px;
+  height: 230px;
+}
+
+.small {
+  width: 38%;
+}
+
+.big {
+  width: 58%;
+}
+
+.casual, .filter__choose {
+  background: url(/assets//hero/baba.png) no-repeat;
+  background-position: center 75%;
+  background-size: cover;
+}
+
+@media (max-width: 900px) {
+  .big, .small {
+    width: 48%;
+  }
+}
+@media (max-width: 780px) {
+  .filter__inner {
+    flex-wrap: wrap;
+    padding: 50px 30px;
+  }
+  .big, .small {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
