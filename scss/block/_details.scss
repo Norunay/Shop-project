@@ -349,6 +349,7 @@
     font-size: 16px;
     color: #00000099;
     margin-top: 25px;
+    // margin: 15px 0;
 }
 
 .rating__btn {
@@ -360,4 +361,59 @@
     background: transparent;
     margin-left: 470px;
     margin-top: 50px;
+}
+
+.clothes__big-title{
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 65px;
+    margin-bottom: 55px;
+}
+
+.clothes__menu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.clothes__title {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.clothes__price {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 8px 0;
+}
+
+.clothes__red-btn {
+    background: #FF33331A;
+    border-radius: 62px;
+    padding: 6px 14px;
+    border: none;
+    font-weight: 500;
+    font-size: 12px;
+    color: #FF3333;
+}
+
+.clothes__h2{
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.clothes__h2-old{
+    font-weight: 700;
+    font-size: 24px;
+    color: #0000004D;
+    text-decoration: line-through;
+}
+
+.clothes__price-box{
+display: flex;
+align-items: center;
+gap: 10px;
 }
