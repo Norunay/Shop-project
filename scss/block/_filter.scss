@@ -1,0 +1,48 @@
+.filter{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.filter__inner{
+    @include fx;
+    flex-direction: column;
+    background: $mainclr;
+    padding: 60px;
+    border-radius: 40px;
+}
+.filter__category{
+    @include fx;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.filter__choose{
+    margin-top: 20px;
+    border-radius: 40px;
+    background: white;
+    padding: 25px 35px;
+    height: 230px;
+}
+.small{
+    width: 38%;
+}
+.big{
+    width: 58%;
+}
+.casual, .filter__choose{
+    background: url(/assets//hero/baba.png) no-repeat;
+    background-position: center 75%;
+    background-size: cover;
+}
+@media (max-width: 900px) {
+    .big,.small{
+        width: 48%;
+    }
+}
+@media (max-width: 780px) {
+    .filter__inner{
+        flex-wrap: wrap;
+        padding: 50px 30px;
+    }
+    .big,.small{
+        width: 100%;
+    }
+}

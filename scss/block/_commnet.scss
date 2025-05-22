@@ -1,0 +1,39 @@
+.commnet__inner{
+    @include fx;
+    flex-direction: column;
+    h4{
+        margin-bottom: 50px;
+    }
+    margin-bottom: 100px;
+}
+.comment__commentator{
+    min-width: 30%;
+    border-radius: 20px;
+    border: 1px solid;
+    padding: 20px 32px;
+    h5{
+        margin-bottom: 15px;
+    }
+}
+.black{
+    color: #000;
+}
+.comment__comment{
+    overflow-y: scroll;
+}
+
+@media (max-width: 1000px) {
+    .comment__commentator{
+        min-width: 40%;
+    }
+}
+@media (max-width: 700px) {
+    .comment__commentator{
+        min-width: 50%;
+    }
+}
+@media (max-width: 570px) {
+    .comment__commentator{
+        min-width: 100%;
+    }
+}
