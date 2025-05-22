@@ -50,9 +50,7 @@
                     <i class="bi bi-search"></i>
                     <input type="text" name="" id="search" placeholder="Search for products...">
                     <ul class="found_product">
-                        <!-- <li>
-                            
-                        </li> -->
+
                     </ul>
                 </label>
                 <ul class="header__tools">
@@ -79,12 +77,12 @@
                 </div>
                 <div class="hero__wrapper">
                     <div class="hero__imgs">
+                        <img src="/assets/hero.svg" alt="" class="hero__img">
                         <div class="hero__img-box">
                             <img src="/assets/hero1.svg" alt="">
                             <img src="/assets/hero2.svg" alt="">
                             <img src="/assets/hero3.svg" alt="">
                         </div>
-                        <img src="/assets/hero.svg" alt="" class="hero__img">
                     </div>
                     <div class="hero__info">
                         <h1 class="hero__title">One Life Graphic T-shirt</h1>
@@ -132,7 +130,9 @@
                                 </div>
                             </div>
                             <div class="hero__box">
-                                <button type="button" class="hero__button"><p>-</p>1<p>+</p></button>
+                                <button type="button" class="hero__button">
+                                    <p>-</p>1<p>+</p>
+                                </button>
                                 <button type="button" class="btn">Add to Cart</button>
                             </div>
                         </div>
@@ -153,8 +153,8 @@
                     <div class="rating__nav">
                         <h2>All Reviews<span>(451)</span></h2>
                         <div class="rating__nav-btns">
-                            <button class="rating__nav-icon" type="button">.<img src="/assets/rating-Frame.svg"
-                                    alt="">.</button>
+                            <button class="rating__nav-icon" type="button"><img src="/assets/rating-Frame.svg"
+                                    alt=""></button>
                             <button class="rating__nav-btn" type="button">Latest <i
                                     class="fa-solid fa-angle-down"></i></button>
                             <button class="rating__nav-button" type="button">Write a Review</button>
@@ -263,52 +263,126 @@
                                 <img src="/assets/stars2.svg" alt="">
                                 <p>4.0/5</p>
                             </div>
-                             <div class="clothes__price-box">
-                            <h2 class="clothes__h2">$212</h2>
-                            <h2 class="clothes__h2-old">$242</h2>
-                            <button type="button" class="clothes__red-btn">-20%</button>
-                        </div>
+                            <div class="clothes__price-box">
+                                <h2 class="clothes__h2">$212</h2>
+                                <h2 class="clothes__h2-old">$242</h2>
+                                <button type="button" class="clothes__red-btn">-20%</button>
+                            </div>
                         </li>
                         <li class="clothes__item">
                             <img src="/assets/clothes2.svg" alt="">
                             <p class="clothes__title">Gradient Graphic T-shirt</p>
-                           <div class="clothes__price"> 
-                            <img src="/assets/stars4.svg" alt="">
-                            <p>3.5/5</p>
-                           </div>
-                             <div class="clothes__price-box">
-                            <h2 class="clothes__h2">$145</h2>
-                        </div>
+                            <div class="clothes__price">
+                                <img src="/assets/stars4.svg" alt="">
+                                <p>3.5/5</p>
+                            </div>
+                            <div class="clothes__price-box">
+                                <h2 class="clothes__h2">$145</h2>
+                            </div>
                         </li>
                         <li class="clothes__item">
                             <img src="/assets/clothes3.svg" alt="">
                             <p class="clothes__title">Polo with Tipping Details</p>
-                           <div class="clothes__price">
-                            <img src="/assets/stars4.svg" alt="">
-                            <p>4.5/5</p>
-                           </div>
-                             <div class="clothes__price-box">
-                            <h2 class="clothes__h2">$180</h2>
-                        </div>
+                            <div class="clothes__price">
+                                <img src="/assets/stars4.svg" alt="">
+                                <p>4.5/5</p>
+                            </div>
+                            <div class="clothes__price-box">
+                                <h2 class="clothes__h2">$180</h2>
+                            </div>
                         </li>
                         <li class="clothes__item">
                             <img src="/assets/clothes4.svg" alt="">
                             <p class="clothes__title">Black Striped T-shirt</p>
-                          <div class="clothes__price">
-                            <img src="/assets/stars.svg" alt="">
-                            <p>5.0/5</p>
-                          </div>
-                             <div class="clothes__price-box">
-                            <h2 class="clothes__h2">$120</h2>
-                            <h2 class="clothes__h2-old">$150</h2>
-                            <button type="button" class="clothes__red-btn">-30%</button>
-                        </div>
+                            <div class="clothes__price">
+                                <img src="/assets/stars.svg" alt="">
+                                <p>5.0/5</p>
+                            </div>
+                            <div class="clothes__price-box">
+                                <h2 class="clothes__h2">$120</h2>
+                                <h2 class="clothes__h2-old">$150</h2>
+                                <button type="button" class="clothes__red-btn">-30%</button>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
     </main>
+
+    <footer class="footer">
+       
+           <div class="container">
+            <div class="footer__top">
+                <h2 class="footer__title">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+                <div class="footer__box">
+                    <div class="footer__input-box">
+                        <img src="/assets/footer.svg" alt="">
+                        <input placeholder="Enter your email address..." class="footer__input" type="text">
+                    </div>
+                    <button type="button" class="btn white-bg">Subscribe to Newsletter</button>
+                </div>
+            </div>
+            <div class="footer__wrapper">
+                <!-- <div class="container"> -->
+                <div class="footer__middle">
+                    <div class="footer__info">
+                        <h2 class="footer__title">SHOP.CO</h2>
+                        <p class="footer__text">We have clothes that suits your style and which you’re proud to wear. From
+                            women to men.</p>
+                        <div class="footer__icons">
+                            <div class="footer__icon"><i class="fa-brands fa-twitter"></i></div>
+                            <div class="footer__icon"><i class="fa-brands fa-facebook-f"></i></div>
+                            <div class="footer__icon"><i class="fa-brands fa-instagram"></i></div>
+                            <div class="footer__icon"><i class="fa-brands fa-github"></i></div>
+                        </div>
+                    </div>
+                        <ul class="footer__menu">
+                            <li class="footer__item">
+                                <h3 class="footer__menu-title">Company</h3>
+                                <p class="footer__menu-text">About</p>
+                                <p class="footer__menu-text">Features</p>
+                                <p class="footer__menu-text">Works</p>
+                                <p class="footer__menu-text">Career</p>
+                            </li>
+                            <li class="footer__item">
+                                <h3 class="footer__menu-title">Help</h3>
+                                <p class="footer__menu-text">Customer Support</p>
+                                <p class="footer__menu-text">Delivery Details</p>
+                                <p class="footer__menu-text">Terms & Conditions</p>
+                                <p class="footer__menu-text">Privacy Policy</p>
+                            </li>
+                            <li class="footer__item">
+                                <h3 class="footer__menu-title">FAQ</h3>
+                                <p class="footer__menu-text">Account</p>
+                                <p class="footer__menu-text"> Manage Deliveries</p>
+                                <p class="footer__menu-text">Orders</p>
+                                <p class="footer__menu-text">Payments</p>
+                            </li>
+                            <li class="footer__item">
+                                <h3 class="footer__menu-title">Resources</h3>
+                                <p class="footer__menu-text">Free eBooks</p>
+                                <p class="footer__menu-text">Development Tutorial</p>
+                                <p class="footer__menu-text">How to - Blog</p>
+                                <p class="footer__menu-text">Youtube Playlist</p>
+                            </li>
+                        </ul>
+                </div>
+                <div class="footer__bottom">
+                    <p class="footer__mini-text">Shop.co © 2000-2023, All Rights Reserved</p>
+                    <div class="footer__btns">
+                        <div class="footer__button"><img src="/assets/Visa.svg" alt=""></div>
+                        <div class="footer__button"><img src="/assets/Mastercard.svg" alt=""></div>
+                        <div class="footer__button"><img src="/assets/Paypal.svg" alt=""></div>
+                        <div class="footer__button"><img src="/assets/ Pay.svg" alt=""></div>
+                        <div class="footer__button"><img src="/assets/G Pay.svg" alt=""></div>
+                    </div>
+                </div>
+            <!-- </div> -->
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>
