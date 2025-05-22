@@ -7,7 +7,11 @@ h3{
     flex-direction: column;
     gap: 32px;
 }
-
+.newer__products{
+    @include fx;
+    flex-wrap: wrap;
+    gap: 5px;
+}
 .new__products{
     display: flex;
     justify-content: start;
@@ -19,7 +23,7 @@ h3{
 .new__product{
     min-width: 300px;
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 1.2em;
     .new__img{
         border-radius: 20px;
         margin-bottom: 16px;
@@ -29,11 +33,16 @@ h3{
         }
     }
     .new__price{
-        font-size: 1.7em;
+        font-weight: 600;
     }
 }
 @media (max-width: 1000px) {
     .new__product{
     min-width: 250px;
 }
+}
+@media (max-width: 630px){
+    .newer__products{
+        justify-content: center;
+    }
 }

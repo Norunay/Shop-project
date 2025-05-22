@@ -5,6 +5,7 @@
 }
 .collab__inner{
     @include fx;
+    text-wrap: nowrap;
     flex-wrap: wrap;
     gap: 20px;
     padding: 42px;
