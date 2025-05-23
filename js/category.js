@@ -3,6 +3,7 @@ const typeOfFilter = document.querySelector('#typeOfClose');
 const range = document.querySelector('#range');
 const rangedPrice = document.querySelector('#showPrice');
 const radioColor = document.querySelector('.colors');
+const fancy = document.querySelector('.fancyColor');
 
 const param = new URLSearchParams(window.location.search);
 let filtertype = param.get("type")
@@ -25,33 +26,57 @@ if(filtertype == 'party'){
 }
 
 let getAllColors = typedProducts.map(el => el.colors);
+let getAllSizes = typedProducts.map(el => el.sizes);
 
 // TODOsdfghjkllkjhgfdsdfghjklgffghjklkjdfgjlfghjklkjhgfghjkl;ljhgfghjkl;lhgfgk;lkjhgfggffghgi
 
 let getAllColor = [];
+let getAllSize = [];
 getAllColors.forEach(el => {
     el.forEach(color => {
         getAllColor.push(color)
     })
 });
+getAllSizes.forEach(el => {
+    el.forEach(color => {
+        getAllSize.push(color);
+    })
+});
 getAllColor = new Set(getAllColor);
+getAllSize = new Set(getAllSize);
 
 
 
-function inputMaker(parent,inputs){
-inputs.forEach((el,i) => {
-    parent.insertAdjacentHTML('beforeend',
-        `
-            <label class="radios" style="background-color: ${el};" for="radio-${i}">
-                <input type="radio" name="radio" id="radio-${i}" hidden>
-                <div class="show"></div>
-            </label>
-        `
-    )
-});    
+
+function inputMaker(parent,inputs,type){
+    if(type == 'regular'){
+        inputs.forEach((el,i) => {
+            parent.insertAdjacentHTML('beforeend',
+                `
+                    <label class="radios" style="background-color: ${el};" for="radio-${i}">
+                        <input type="radio" class="rrRadio" name="radio" value="${el}" id="radio-${i}" hidden>
+                        <div class="show"></div>
+                    </label>
+                `
+            )
+        });
+        return;
+    }
+    inputs.forEach((el,i) => {
+        parent.insertAdjacentHTML('beforeend',
+            `
+                <label class="fancy filterer" for="radios-${i}">
+                    ${el}
+                    <input type="radio" name="radi" class="ffRadio" value="${el}" id="radios-${i}" hidden>
+                    <div class="show">${el}</div>
+                </label>
+            `
+        )
+    });
 }
 
-inputMaker(radioColor,getAllColor);
+inputMaker(radioColor,getAllColor,'regular');
+inputMaker(fancy,getAllSize,'fancy');
 
 function showProducts(array){
     ul.innerHTML = '';
@@ -76,8 +101,10 @@ showProducts(typedProducts);
 
 rangedPrice.innerHTML= `${range.value}$`
 
+let filterer;
+
 range.addEventListener('input',()=>{
     rangedPrice.innerHTML= `${range.value}$`
-    let filtered = typedProducts.filter(el => el.price <= range.value);
-    showProducts(filtered);
+    let filterer = typedProducts.filter(el => el.price <= range.value);
+    showProducts(filterer);
 });

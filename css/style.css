@@ -1290,15 +1290,21 @@ h3 {
   display: block;
 }
 
+.radios {
+  border: 1px solid grey;
+}
+
 .fancy {
   padding: 10px 20px;
   background: #F2F0F1;
+  margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   overflow: hidden;
   border-radius: 20px;
+  width: 46%;
 }
 .fancy input[type=radio]:checked ~ .show {
   display: flex;
@@ -1322,4 +1328,13 @@ h3 {
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
+}
+
+.category__border {
+  font-weight: 700;
+}
+
+.fancyColor {
+  gap: 0;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */

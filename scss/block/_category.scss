@@ -49,15 +49,20 @@
         display: block;
     }
 }
+.radios{
+    border: 1px solid grey;
+}
 .fancy{
     padding: 10px 20px;
     background: $mainclr;
+    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     overflow: hidden;
     border-radius: 20px;
+    width: 46%;
     input[type = radio]:checked ~ .show{
         display: flex;
     }
@@ -80,4 +85,11 @@
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
+}
+.category__border{
+    font-weight: 700;
+}
+.fancyColor{
+    gap: 0;
+    justify-content: space-between;
 }
