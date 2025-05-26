@@ -4,13 +4,19 @@ const range = document.querySelector('#range');
 const rangedPrice = document.querySelector('#showPrice');
 const radioColor = document.querySelector('.colors');
 const fancy = document.querySelector('.fancyColor');
+const slider = document.querySelector('.bi-sliders2-vertical');
+const filter = document.querySelector('.category__filter');
+
+slider.onclick = () => {
+
+}
 
 const param = new URLSearchParams(window.location.search);
 let filtertype = param.get("type")
 
 let typedProducts = [];
 
-typeOfFilter.innerHTML = filtertype.charAt(0).toLocaleUpperCase() + filtertype.slice(1);
+typeOfFilter.innerHTML = filtertype.charAt(0).toLocaleUpperCase() + filtertype.slice(1) + '<i class="bi bi-sliders2-vertical"></i>';
 
 if(filtertype == 'casual'){
     typedProducts = products.filter(el => el.category == 'Casual');

@@ -2,7 +2,7 @@ let products = [
   {
     id: 0,
     title: "Buggy Jeans",
-    image: "./images/1.jpg",
+    image: "/images/1.jpg",
     rating: 5,
     price: 120,
     category: "gym",
@@ -58,7 +58,7 @@ let products = [
   {
     id: 1,
     title: "Nightline Hoodie",
-    image: "./images/2.jpg",
+    image: "/images/2.jpg",
     rating: 4,
     price: 90,
     category: "Casual",
@@ -114,7 +114,7 @@ let products = [
   {
     id: 2,
     title: "Sharp Formal Shirt",
-    image: "./images/3.jpg",
+    image: "/images/3.jpg",
     rating: 5,
     price: 140,
     category: "Formal",
@@ -170,7 +170,7 @@ let products = [
   {
     id: 3,
     title: "Beast Gym Tank",
-    image: "./images/4.jpg",
+    image: "/images/4.jpg",
     rating: 3,
     price: 70,
     category: "gym",
@@ -226,7 +226,7 @@ let products = [
   {
     id: 4,
     title: "Glow Party Blazer",
-    image: "./images/5.jpg",
+    image: "/images/5.jpg",
     rating: 4,
     price: 200,
     category: "Party",
@@ -282,7 +282,7 @@ let products = [
   {
     id: 5,
     title: "Urban Casual Tee",
-    image: "./images/6.jpg",
+    image: "/images/6.jpg",
     rating: 5,
     price: 65,
     category: "Casual",
@@ -338,7 +338,7 @@ let products = [
   {
     id: 6,
     title: "Silken Formal Pants",
-    image: "./images/7.jpg",
+    image: "/images/7.jpg",
     rating: 4,
     price: 110,
     category: "Formal",
@@ -394,7 +394,7 @@ let products = [
   {
     id: 7,
     title: "Crimson Gym Shorts",
-    image: "./images/8.jpg",
+    image: "/images/8.jpg",
     rating: 3,
     price: 55,
     category: "gym",
@@ -450,7 +450,7 @@ let products = [
   {
     id: 8,
     title: "Neon Pulse Jacket",
-    image: "./images/9.jpg",
+    image: "/images/9.jpg",
     rating: 4,
     price: 175,
     category: "Party",
@@ -506,7 +506,7 @@ let products = [
   {
     id: 9,
     title: "Café Brown Polo",
-    image: "./images/10.jpg",
+    image: "/images/10.jpg",
     rating: 4,
     price: 85,
     category: "Casual",
@@ -562,7 +562,7 @@ let products = [
   {
     id: 10,
     title: "Executive Blazer",
-    image: "./images/11.jpg",
+    image: "/images/11.jpg",
     rating: 5,
     price: 210,
     category: "Formal",
@@ -618,7 +618,7 @@ let products = [
   {
     id: 11,
     title: "Noir Night Shirt",
-    image: "./images/12.jpg",
+    image: "/images/12.jpg",
     rating: 3,
     price: 115,
     category: "Party",
@@ -642,28 +642,28 @@ let products = [
           "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
       },
       {
-        user: "Samatha",
+        user: "Silve W.",
         userRate: 5,
         posted: "September 12, 2024",
         comment:
           "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
       },
       {
-        user: "Samatha",
+        user: "Kafka",
         userRate: 4,
         posted: "Feburary 29, 2024",
         comment:
           "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
       },
       {
-        user: "Samatha",
+        user: "Asta",
         userRate: 3,
         posted: "January 27, 2024",
         comment:
           "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
       },
       {
-        user: "Samatha",
+        user: "Herta",
         userRate: 4,
         posted: "May 21, 2024",
         comment:
@@ -674,7 +674,7 @@ let products = [
   {
     id: 12,
     title: "Velocity Gym Tee",
-    image: "./images/13.jpg",
+    image: "/images/13.jpg",
     rating: 5,
     price: 60,
     category: "gym",
@@ -684,42 +684,42 @@ let products = [
     sizes: ['Small', 'Medium', 'Large', 'X-large', 'XX-large'],
      comments: [
       {
-        user: "Samatha",
+        user: "Sampo",
         userRate: 4,
         posted: "August 14, 2024",
         comment:
           "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt.",
       },
       {
-        user: "Alex M.",
+        user: "Gepard",
         userRate: 5,
         posted: "August 15, 2024",
         comment:
           "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
       },
       {
-        user: "Samatha",
+        user: "Kokolia",
         userRate: 5,
         posted: "September 12, 2024",
         comment:
           "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
       },
       {
-        user: "Samatha",
+        user: "Bronya",
         userRate: 4,
         posted: "Feburary 29, 2024",
         comment:
           "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
       },
       {
-        user: "Samatha",
+        user: "Pauver",
         userRate: 3,
         posted: "January 27, 2024",
         comment:
           "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
       },
       {
-        user: "Samatha",
+        user: "Robin",
         userRate: 4,
         posted: "May 21, 2024",
         comment:
@@ -730,7 +730,7 @@ let products = [
   {
     id: 13,
     title: "Ash Gray Trousers",
-    image: "./images/14.jpg",
+    image: "/images/14.jpg",
     rating: 4,
     price: 105,
     category: "Formal",
@@ -740,42 +740,42 @@ let products = [
     sizes: ['Small', 'Medium', 'Large', 'X-large', 'XX-large'],
      comments: [
       {
-        user: "Samatha",
+        user: "Sunday",
         userRate: 4,
         posted: "August 14, 2024",
         comment:
           "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt.",
       },
       {
-        user: "Alex M.",
+        user: "Black Swan",
         userRate: 5,
         posted: "August 15, 2024",
         comment:
           "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
       },
       {
-        user: "Samatha",
+        user: "Himiko",
         userRate: 5,
         posted: "September 12, 2024",
         comment:
           "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
       },
       {
-        user: "Samatha",
+        user: "Yang",
         userRate: 4,
         posted: "Feburary 29, 2024",
         comment:
           "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
       },
       {
-        user: "Samatha",
+        user: "Dan Heng",
         userRate: 3,
         posted: "January 27, 2024",
         comment:
           "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
       },
       {
-        user: "Samatha",
+        user: "March 7",
         userRate: 4,
         posted: "May 21, 2024",
         comment:
@@ -786,7 +786,7 @@ let products = [
   {
     id: 14,
     title: "Streetline Hoodie",
-    image: "./images/15.jpg",
+    image: "/images/15.jpg",
     rating: 4,
     price: 98,
     category: "Casual",
@@ -810,28 +810,28 @@ let products = [
           "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
       },
       {
-        user: "Samatha",
+        user: "Mimi",
         userRate: 5,
         posted: "September 12, 2024",
         comment:
           "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
       },
       {
-        user: "Samatha",
+        user: "Mem",
         userRate: 4,
         posted: "Feburary 29, 2024",
         comment:
           "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
       },
       {
-        user: "Samatha",
+        user: "Yesir",
         userRate: 3,
         posted: "January 27, 2024",
         comment:
           "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
       },
       {
-        user: "Samatha",
+        user: "Ben",
         userRate: 4,
         posted: "May 21, 2024",
         comment:
@@ -843,7 +843,7 @@ let products = [
   {
     id: 15,
     title: "Midnight Party Tee",
-    image: "./images/16.jpg",
+    image: "/images/16.jpg",
     rating: 5,
     price: 75,
     category: "Party",
@@ -867,28 +867,28 @@ let products = [
           "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
       },
       {
-        user: "Samatha",
+        user: "Cry 'bout it",
         userRate: 5,
         posted: "September 12, 2024",
         comment:
           "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
       },
       {
-        user: "Samatha",
+        user: "Brown",
         userRate: 4,
         posted: "Feburary 29, 2024",
         comment:
           "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
       },
       {
-        user: "Samatha",
+        user: "White",
         userRate: 3,
         posted: "January 27, 2024",
         comment:
           "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
       },
       {
-        user: "Samatha",
+        user: "Kachok",
         userRate: 4,
         posted: "May 21, 2024",
         comment:
@@ -899,7 +899,7 @@ let products = [
   {
     id: 16,
     title: "Combat Gym Pants",
-    image: "./images/17.jpg",
+    image: "/images/17.jpg",
     rating: 3,
     price: 95,
     category: "gym",
@@ -923,28 +923,28 @@ let products = [
           "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
       },
       {
-        user: "Samatha",
+        user: "Guzali",
         userRate: 5,
         posted: "September 12, 2024",
         comment:
           "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
       },
       {
-        user: "Samatha",
+        user: "Bali",
         userRate: 4,
         posted: "Feburary 29, 2024",
         comment:
           "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
       },
       {
-        user: "Samatha",
+        user: "Samali",
         userRate: 3,
         posted: "January 27, 2024",
         comment:
           "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
       },
       {
-        user: "Samatha",
+        user: "Lingan G.",
         userRate: 4,
         posted: "May 21, 2024",
         comment:
@@ -955,7 +955,7 @@ let products = [
   {
     id: 17,
     title: "Elite Formal Suit",
-    image: "./images/18.jpg",
+    image: "/images/18.jpg",
     rating: 5,
     price: 250,
     category: "Formal",
@@ -979,28 +979,28 @@ let products = [
           "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
       },
       {
-        user: "Samatha",
+        user: "Makima",
         userRate: 5,
         posted: "September 12, 2024",
         comment:
           "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
       },
       {
-        user: "Samatha",
+        user: "Power",
         userRate: 4,
         posted: "Feburary 29, 2024",
         comment:
           "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
       },
       {
-        user: "Samatha",
+        user: "Denji",
         userRate: 3,
         posted: "January 27, 2024",
         comment:
           "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
       },
       {
-        user: "Samatha",
+        user: "Must pull",
         userRate: 4,
         posted: "May 21, 2024",
         comment:
@@ -1011,7 +1011,7 @@ let products = [
   {
     id: 18,
     title: "Twilight Party Shirt",
-    image: "./images/19.jpg",
+    image: "/images/19.jpg",
     rating: 4,
     price: 130,
     category: "Party",
@@ -1027,31 +1027,31 @@ let products = [
         comment: "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt.",
       },
       {
-        user: "Alex M.",
+        user: "Alexsandry M.",
         userRate: 5,
         posted: "August 15, 2024",
         comment: "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
       },
       {
-        user: "Samatha",
+        user: "Woo Song Ch.",
         userRate: 5,
         posted: "September 12, 2024",
         comment: "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
       },
       {
-        user: "Samatha",
+        user: "Jin",
         userRate: 4,
         posted: "Feburary 29, 2024",
         comment: "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
       },
       {
-        user: "Samatha",
+        user: "Son",
         userRate: 3,
         posted: "January 27, 2024",
         comment: "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
       },
       {
-        user: "Samatha",
+        user: "Gru",
         userRate: 4,
         posted: "May 21, 2024",
         comment: "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
@@ -1061,7 +1061,7 @@ let products = [
   {
     id: 19,
     title: "Metro Fit Tee",
-    image: "./images/20.jpg",
+    image: "/images/20.jpg",
     rating: 4,
     price: 78,
     category: "Casual",
@@ -1085,28 +1085,28 @@ let products = [
           "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
       },
       {
-        user: "Samatha",
+        user: "Dr.See",
         userRate: 5,
         posted: "September 12, 2024",
         comment:
           "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
       },
       {
-        user: "Samatha",
+        user: "Ghoul",
         userRate: 4,
         posted: "Feburary 29, 2024",
         comment:
           "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
       },
       {
-        user: "Samatha",
+        user: "Lebron J.",
         userRate: 3,
         posted: "January 27, 2024",
         comment:
           "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.",
       },
       {
-        user: "Samatha",
+        user: "Hendry",
         userRate: 4,
         posted: "May 21, 2024",
         comment:
@@ -1115,5 +1115,3 @@ let products = [
     ],
   },
 ];
-
-

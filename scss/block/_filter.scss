@@ -21,16 +21,32 @@
     padding: 25px 35px;
     height: 230px;
 }
+.bi-x-lg{
+    cursor: pointer;
+}
 .small{
     width: 38%;
 }
 .big{
     width: 58%;
 }
-.casual, .filter__choose{
+.party{
     background: url(/assets//hero/baba.png) no-repeat;
     background-position: center 75%;
     background-size: cover;
+}
+.gym{
+    background: url(/assets//hero/kachok.png) no-repeat;
+    background-position: center 75%;
+    background-size: cover;
+}
+.casual{
+    background: url(/assets//hero/casual.png) no-repeat;
+    background-position: center;
+}
+.formal{
+    background: url(/assets//hero/foraml.png) no-repeat;
+    background-position: center left;
 }
 @media (max-width: 900px) {
     .big,.small{
@@ -41,6 +57,21 @@
     .filter__inner{
         flex-wrap: wrap;
         padding: 50px 30px;
+    }
+    .category__filter{
+        display: none;
+    }
+    .category__products{
+        width: 100%;
+    }
+    .new__img{
+        min-width: 180px;
+        img{
+            min-width: 180px;
+        }
+    }
+    .newer__products{
+        width: 100%;
     }
     .big,.small{
         width: 100%;
