@@ -1244,6 +1244,12 @@ h3 {
   .big, .small {
     width: 100%;
   }
+  .category__filter {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: #fff;
+  }
 }
 .commnet__inner {
   display: flex;
@@ -1438,9 +1444,17 @@ h3 {
   .newer__p {
     max-width: 100%;
   }
-}
-@media (max-width: 780px) {
   .newer__products {
     justify-content: center;
+  }
+  .category__filter {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: #fff;
+    left: 0;
+  }
+  .category__filter .bi-sliders2-vertical {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

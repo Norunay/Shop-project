@@ -126,10 +126,18 @@
     .newer__p{
         max-width: 100%;
     }
-}   
-
-@media (max-width: 780px) {
     .newer__products{
         justify-content: center;
+    }
+
+    .category__filter{
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        background-color: #fff;
+        left: 0;
+        .bi-sliders2-vertical{
+            display: none;
+        }
     }
 }

@@ -1,21 +1,29 @@
-const ul = document.querySelector('.newer__products');
+const param = new URLSearchParams(window.location.search);
+let filtertype = param.get("type");
+
 const typeOfFilter = document.querySelector('#typeOfClose');
+typeOfFilter.innerHTML = filtertype.charAt(0).toLocaleUpperCase() + filtertype.slice(1) + '<i class="click bi bi-sliders2-vertical hide   "></i>';
+
+const ul = document.querySelector('.newer__products');
+const exit = document.querySelector('#x-lg');
 const rangedPrice = document.querySelector('#showPrice');
 const radioColor = document.querySelector('.colors');
 const fancy = document.querySelector('.fancyColor');
-const slider = document.querySelector('.bi-sliders2-vertical');
+const slider = document.querySelector('.click');
 const filter = document.querySelector('.category__filter');
 
 slider.onclick = () => {
-
+    filter.style.display = "block";
 }
 
-const param = new URLSearchParams(window.location.search);
-let filtertype = param.get("type")
+console.log(exit);
+
+exit.onclick = () => {
+    filter.style.display = "none";    
+}
 
 let typedProducts = [];
 
-typeOfFilter.innerHTML = filtertype.charAt(0).toLocaleUpperCase() + filtertype.slice(1) + '<i class="bi bi-sliders2-vertical"></i>';
 
 if(filtertype == 'casual'){
     typedProducts = products.filter(el => el.category == 'Casual');
