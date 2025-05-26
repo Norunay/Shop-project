@@ -90,7 +90,7 @@ function showProducts(array){
         ul.insertAdjacentHTML('beforeend',
             `
                 <li class="new__product newer__p">
-                    <a href="/body/detail.html?id=${el.id}" class="new__product">
+                    <a href="/detail.html?id=${el.id}" class="new__product">
                         <div class="new__img">
                             <img src="/images/${el.id+1}.jpg" alt=""> <span></span>
                         </div>
