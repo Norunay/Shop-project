@@ -79,9 +79,6 @@ header{
     }
 }
 @media (max-width: 800px) {
-    .header__tools{
-        width: 15%;
-    }
     .hide{
         display: block;
     }
@@ -113,9 +110,6 @@ header{
 @media (max-width: 600px) {
     html{
         font-size: 12px;
-    }
-    .header__tools{
-        width: 22%;
     }
 }
 @media (max-width: 400px) {
