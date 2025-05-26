@@ -1,20 +1,31 @@
 const allCheckboxes = document.querySelectorAll('.rrRadio');
+const range = document.querySelector('#range');
+
+rangedPrice.innerHTML= `${range.value}$`
+
+let filterer;
 
 function filterProdu() {
-  let chelkbekValues = Array.from(allCheckboxes)
-  .filter((radio) => radio.checked)
-  .map((el) => el.value);  
-  console.log(chelkbekValues);
-  
-  
+    rangedPrice.innerHTML= `${range.value}$`;
+    
+    let chelkbekValues = Array.from(allCheckboxes)
+    .filter((radio) => radio.checked)
+    .map((el) => el.value);  
+    
+    
     let filtered = typedProducts.filter(el => {
-        let material = el.colors.includes(chelkbekValues[0]);
-        return material;
-    })  
-    console.log(filtered);
-    showProducts(filtered);
+        return el.colors.includes(chelkbekValues[0]);
+    });    
+    
+    let filterer = filtered.filter(el => el.price <= range.value);
+    
+    if(filtered.length == 0){
+        filterer = typedProducts.filter(el => el.price <= range.value);
+    }
+
+    showProducts(filterer);
 }
 
-[...allCheckboxes].forEach(el => {
+[...allCheckboxes,range].forEach(el => {
     el.addEventListener('input', filterProdu);
 })

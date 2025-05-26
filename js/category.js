@@ -1,6 +1,5 @@
 const ul = document.querySelector('.newer__products');
 const typeOfFilter = document.querySelector('#typeOfClose');
-const range = document.querySelector('#range');
 const rangedPrice = document.querySelector('#showPrice');
 const radioColor = document.querySelector('.colors');
 const fancy = document.querySelector('.fancyColor');
@@ -94,23 +93,13 @@ function showProducts(array){
                         <div class="new__img">
                             <img src="/images/${el.id+1}.jpg" alt=""> <span></span>
                         </div>
-                        ${el.title}
-                        
+                        ${el.title}   
                         <div class="new__price">${el.price}$</div>
-                        </a>
-                        </li>
+                    </a>
+                </li>
             `
         )
     });
 }
 showProducts(typedProducts);
 
-rangedPrice.innerHTML= `${range.value}$`
-
-let filterer;
-
-range.addEventListener('input',()=>{
-    rangedPrice.innerHTML= `${range.value}$`
-    let filterer = typedProducts.filter(el => el.price <= range.value);
-    showProducts(filterer);
-});

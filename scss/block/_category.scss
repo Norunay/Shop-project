@@ -22,7 +22,7 @@
     margin-bottom: 20px;
 }
 .filterer{
-    padding: 20px;
+    padding-bottom: 20px;
     border-bottom: 1px solid $mainclr;
 }
 .bb{
@@ -89,6 +89,15 @@
     font-size: 5px;
 }
 
+.lmao{
+    li{
+        margin-bottom: 10px;
+    }
+}
+.fancyColor{
+    border-bottom: 1px solid #F2F0F1;
+    padding-bottom: 20px;
+}
 #typeOfClose{
     @include fx;
     margin-bottom: 20px;
